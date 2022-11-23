@@ -2,7 +2,6 @@
 @import "partials/mixins";
 
 .logo {
-  margin-left: -10px;
   margin-top: 94px;
   width: 100%;
   img {
@@ -15,11 +14,22 @@
   height: 100%;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: space-between;
+  margin-top: -200px;
+  @media(max-width:1679px){
+    margin-top: -100px;
+  }
+  @media(max-width:1280px){
+    margin-top: 0px;
+  }
+  @media(max-width:991px){
+    height: auto;
+  }
 }
 
 .banner-top {
   min-height: 100vh;
-  background: url(../img/banner-bg.png) no-repeat center center;
+  background: url(../img/kikkr-banner.svg) no-repeat center center;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +38,6 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    margin-top: -94px;
     height: 100%;
     max-width: 50%;
     color: #fff;
@@ -70,7 +79,6 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    margin-top: -154px;
     height: 100%;
     max-width: 50%;
     @media(max-width:991px){
@@ -79,9 +87,18 @@
     @media(max-width:767px){
       max-width: 100%;
       margin-top: 0px;
+      height: auto;
+      width: 100%;
+      text-align: center;
+      display: block;
+      margin-bottom: 50px;
+
+      img{
+        max-width: 300px !important;
+      }
     }
     img{
-      max-width: 100%;
+      max-width: 300px;
       
     }
   }
@@ -166,7 +183,6 @@
 @media (max-width: 1679px) {
 
   .logo {
-    margin-left: -10px;
     margin-top: 74px;
 }
   .banner-top .caption-area .title-tp {
@@ -260,7 +276,8 @@
 }
   .banner-top .caption-area {
     max-width: 100%;
-    margin-top:50px;
+    margin-top: 50px;
+    height: auto;
   }
   .banner-top .caption-area .title-tp {
     font-size: 29px;
@@ -277,7 +294,7 @@
 }
   .banner-top {
     min-height: 100vh;
-    background: url(../img/mobile-bg.png) no-repeat center center;
+    background: url(../img/kikkr-banner.svg) no-repeat center center;
     background-size: cover;
     align-items: flex-start;
     padding-left: 10px;
